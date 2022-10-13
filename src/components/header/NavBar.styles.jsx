@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavBarContainer = styled.nav`
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 2.4rem;
-  margin: 2.4rem;
+  margin: 1.8rem;
 `;
 
 export const NavItem = styled(Link)`

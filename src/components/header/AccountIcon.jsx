@@ -5,9 +5,9 @@ import { ReactComponent as PersonIcon } from "../../assets/account.svg";
 import { AccountIconContainer } from "./AccountIcon.styles";
 
 const AccountIcon = () => {
-  const [isAccountMenuOpen, setisAccountMenuOpen] = useState(false);
+  const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
 
-  const toggle = () => setisAccountMenuOpen(!isAccountMenuOpen);
+  const toggle = () => setIsAccountMenuOpen(!isAccountMenuOpen);
 
   const handleButtonClick = (event) => {
     event.preventDefault();
@@ -23,7 +23,7 @@ const AccountIcon = () => {
       />
       {isAccountMenuOpen && (
         <AcountIconMenu
-          handleIsAccountMenuOpen={setisAccountMenuOpen}
+          handleIsAccountMenuOpen={setIsAccountMenuOpen}
           iconId={"accountIcon"}
         />
       )}

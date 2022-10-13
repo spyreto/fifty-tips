@@ -5,6 +5,8 @@ import Header from "../../components/header/Header";
 import AuthModal from "../../components/auth/AuthModal";
 import Footer from "../../components/footer/Footer";
 
+import EmptyDiv from "../../components/EmptyDiv";
+
 import { Container } from "./Layout.styles";
 
 const Navigation = () => {
@@ -19,6 +21,7 @@ const Navigation = () => {
       )}
       <Header />
       <Outlet />
+      <EmptyDiv />
       <Footer />
     </Container>
   );
