@@ -24,12 +24,12 @@ export const Column = styled.div`
 export const ImgColumn = styled.div`
   flex-grow: 1;
   width: 20rem;
-  margin-left: 4.8rem;
+  margin-left: 8.6rem;
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.2),
       rgba(34, 34, 34, 0.2)
     ),
-    url(${(props) => props.imagePath});
+    url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
 `;

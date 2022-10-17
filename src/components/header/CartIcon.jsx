@@ -1,4 +1,4 @@
-import { ReactComponent as ShoppingBagIcon } from "../../assets/shopping-bag.svg";
+import { ReactComponent as ShoppingBagIcon } from "../../assets/svg/shopping-bag.svg";
 import { CartIconContainer, ItemCount } from "./CartIcon.styles";
 
 const CartIcon = () => {

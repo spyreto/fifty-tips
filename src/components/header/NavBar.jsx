@@ -7,10 +7,10 @@ const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
 
-  const handleOnMouseEnter = (submenu) => {
+  const handleOnMouseEnter = ({ submenu, imageUrl }) => {
     if (submenu) {
       setOpenMenu(true);
-      setActiveMenu(submenu);
+      setActiveMenu({ submenu, imageUrl });
     } else {
       setOpenMenu(false);
       setActiveMenu(null);
@@ -25,7 +25,14 @@ const NavBar = () => {
   const mainMenuList = mainMenu.map((item) => {
     return (
       <div key={item.title}>
-        <NavItem onMouseEnter={() => handleOnMouseEnter(item.submenu)}>
+        <NavItem
+          onMouseEnter={() =>
+            handleOnMouseEnter({
+              submenu: item.submenu,
+              imageUrl: item.imageUrl,
+            })
+          }
+        >
           {item.title}
         </NavItem>
       </div>
@@ -36,7 +43,11 @@ const NavBar = () => {
     <NavBarContainer>
       {mainMenuList}
       {openMenu && (
-        <Menu items={activeMenu} handleOnMouseOut={handleOnMouseOut} />
+        <Menu
+          activeMenu={activeMenu.submenu}
+          menuImage={activeMenu.imageUrl}
+          handleOnMouseOut={handleOnMouseOut}
+        />
       )}
     </NavBarContainer>
   );

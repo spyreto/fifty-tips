@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import {
   Container,
   Column,
@@ -5,22 +7,19 @@ import {
   Title,
   SubMenuItem,
 } from "./Menu.styles";
-import submenuImage from "../../assets/main-menu/men.jpg";
 
-const Menu = ({ items, handleOnMouseOut }) => {
-  console.log(items);
-
-  const listItems = items.map((item) => {
+const Menu = ({ activeMenu, menuImage, handleOnMouseOut }) => {
+  const listItems = activeMenu.map((item, index) => {
     let submenu;
 
     if (item.submenu) {
-      submenu = item.submenu.map((item) => {
-        return <SubMenuItem>{item.title}</SubMenuItem>;
+      submenu = item.submenu.map((item, index) => {
+        return <SubMenuItem key={index}>{item.title}</SubMenuItem>;
       });
     }
 
     return (
-      <Column>
+      <Column key={index}>
         <Title>{item.title}</Title>
         {submenu}
       </Column>
@@ -30,7 +29,7 @@ const Menu = ({ items, handleOnMouseOut }) => {
   return (
     <Container onMouseLeave={() => handleOnMouseOut()}>
       {listItems}
-      <ImgColumn imagePath={submenuImage} />
+      <ImgColumn imageUrl={process.env.PUBLIC_URL + menuImage} />
     </Container>
   );
 };
