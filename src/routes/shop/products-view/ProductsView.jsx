@@ -1,4 +1,4 @@
-import ProductsViewItem from "./ProductCard";
+import ProductsViewItem from "../product-card/ProductCard";
 import {
   Container,
   ProductsContainer,

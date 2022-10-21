@@ -1,5 +1,5 @@
-import LinksColumn from "./LinksColumn";
-import SocialLinksColumn from "./SocialLinksColumn";
+import LinksColumn from "./links-column/LinksColumn";
+import SocialLinksColumn from "./social-links-column/SocialLinksColumn";
 import { FooterContainer } from "./Footer.styles";
 
 const aboutUs = {

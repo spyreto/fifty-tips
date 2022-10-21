@@ -1,4 +1,4 @@
-import { ReactComponent as HeartIcon } from "../../assets/svg/wishlist.svg";
+import { ReactComponent as HeartIcon } from "../../../assets/svg/wishlist.svg";
 import { WishlistIconContainer, ItemCount } from "./WishlistIcon.styles";
 
 const WishlistIcon = () => {

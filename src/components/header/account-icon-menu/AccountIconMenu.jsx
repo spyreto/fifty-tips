@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux";
 import {
   openSignInModal,
   openSignUpModal,
-} from "../../store/authModal/authModalActions.js";
+} from "../../../store/authModal/authModalActions.js";
 
-import Button from "../button/Button";
+import Button from "../../button/Button";
 
 import {
   AccountIconMenuContainer,

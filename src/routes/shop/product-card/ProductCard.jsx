@@ -1,7 +1,10 @@
-// import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from "react-redux";
 
-import Button, { BUTTON_TYPE_CLASSES } from "../../components/button/Button";
-import { ReactComponent as HeartIcon } from "../../assets/svg/wishlist.svg";
+import { addItemToCart } from "../../../store/cart/cartActions";
+
+import Button from "../../../components/button/Button";
+
+import { ReactComponent as HeartIcon } from "../../../assets/svg/wishlist.svg";
 
 import {
   ProductCartContainer,
@@ -18,8 +21,9 @@ import {
 
 const ProductCard = ({ product }) => {
   const { name, price, images, badges, compareAtPrice } = product;
+  const dispatch = useDispatch();
 
-  const addProductToCart = () => console.log("skata");
+  const addProductToCart = () => dispatch(addItemToCart(product));
 
   return (
     <ProductCartContainer>

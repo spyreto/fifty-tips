@@ -20,7 +20,7 @@ export const Badge = styled.span`
   padding: 0.8rem;
   background-color: #212529;
   color: #fff;
-  z-index: 555;
+  z-index: 2;
 `;
 
 export const ImageContainer = styled.div`

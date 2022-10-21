@@ -1,5 +1,5 @@
-import TopHeaderBar from "./TopHeaderBar";
-import NavBar from "./NavBar";
+import TopHeaderBar from "./top-header-navbar/TopHeaderBar";
+import NavBar from "./navbar/NavBar";
 import { HeaderContainer } from "./Header.styles";
 
 const Header = () => {

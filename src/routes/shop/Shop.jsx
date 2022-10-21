@@ -1,5 +1,5 @@
-import ProductsView from "./ProductsView";
-import FiltersSidebar from "./FiltersSidebar";
+import ProductsView from "./products-view/ProductsView";
+import FiltersSidebar from "./filters-sidebar/FiltersSidebar";
 
 import Breadcrumb from "../../components/shared/Breadcrumb";
 import { Container, ShopContainer } from "./Shop.styles";

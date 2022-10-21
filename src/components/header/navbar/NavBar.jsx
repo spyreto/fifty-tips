@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Menu from "./Menu";
-import mainMenu from "../../data/mainNavigation";
+import Menu from "../menu/Menu";
+import mainMenu from "../../../data/mainNavigation";
 import { NavBarContainer, NavItem } from "./NavBar.styles";
 
 const NavBar = () => {

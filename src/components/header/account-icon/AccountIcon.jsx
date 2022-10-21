@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import AcountIconMenu from "./AccountIconMenu";
-import { ReactComponent as PersonIcon } from "../../assets/svg/account.svg";
+import AcountIconMenu from "../account-icon-menu/AccountIconMenu";
+import { ReactComponent as PersonIcon } from "../../../assets/svg/account.svg";
 import { AccountIconContainer } from "./AccountIcon.styles";
 
 const AccountIcon = () => {
